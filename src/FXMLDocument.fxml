@@ -15,7 +15,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="233.0">
                <children>
                   <Label layoutX="36.0" layoutY="27.0" text="Nombre" />
-                  <TextField layoutX="36.0" layoutY="54.0" prefHeight="25.0" prefWidth="193.0" />
+                  <TextField fx:id="txtNombre" layoutX="36.0" layoutY="54.0" prefHeight="25.0" prefWidth="193.0" />
                   <Label layoutX="36.0" layoutY="91.0" text="Apellido" />
                   <DatePicker fx:id="Fecha_NAc" layoutX="38.0" layoutY="179.0" prefHeight="25.0" prefWidth="190.0" />
                   <Label layoutX="36.0" layoutY="155.0" text="Fecha de Nacimiento" />
@@ -24,7 +24,7 @@
                         <Button fx:id="btnRegistrar" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" text="Registrar" />
                      </children>
                   </Pane>
-                  <TextField layoutX="36.0" layoutY="115.0" prefHeight="25.0" prefWidth="193.0" />
+                  <TextField fx:id="txtApellido" layoutX="36.0" layoutY="115.0" prefHeight="25.0" prefWidth="193.0" />
                </children>
             </AnchorPane>
         </content>
