@@ -19,31 +19,26 @@ import javafx.stage.Stage;
  *
  * @author Rental Servicios
  */
-public class principal extends Application{
+public class principal extends Application {
 
-      
     @Override
     public void start(Stage stage) throws Exception {
- Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
- 
-Scene scene = new Scene(root);
- 
-stage.setScene(scene);
-stage.show();
- }
-
-    @Override
-    public void init() throws Exception {
-        super.init(); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    public static void main(String[] args) {
-       launch(args);      
+        try{
+        Parent root = FXMLLoader.load(getClass().getResource("/VentanaInit/FXMLDocument.fxml"));
        
-    }
-    
- 
+        Scene scene = new Scene(root);
 
-   
-    
+        stage.setScene(scene);
+        stage.show(); 
+        }catch(Exception e){
+            System.out.println("Error al Invocar FXML");
+        }
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+
+    }
+
 }
